@@ -7,4 +7,8 @@ export const ROUTES_PATH = {
     name: 'MySessions',
     path: '/my-sessions',
   },
+  CREATE_SESSION: {
+    name: 'CreateSession',
+    path: '/create-session',
+  },
 }

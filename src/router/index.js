@@ -18,6 +18,11 @@ const routes = [
         /* webpackChunkName: "about" */ '@/views/mySessions/MySessions.vue'
       ),
   },
+  {
+    path: ROUTES_PATH.CREATE_SESSION.path,
+    name: ROUTES_PATH.CREATE_SESSION.name,
+    component: () => import('@/views/createSession/CreateSession.vue'),
+  },
 ]
 
 const router = new VueRouter({
