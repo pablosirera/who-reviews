@@ -10,6 +10,3 @@ export const mockSessions = [
     name: 'Backend',
   },
 ]
-
-export default () =>
-  Promise.resolve({ data: { data: { session: mockSessions } } })
