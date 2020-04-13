@@ -1,5 +1,13 @@
 {
+  "create": {
+    "create": "Create",
+    "name": "Name of session"
+  },
   "home": {
     "createSession": "Create Session"
+  },
+  "tabs": {
+    "home": "Home",
+    "mySessions": "My sessions"
   }
 }

@@ -1,9 +1,14 @@
 <template>
-  <h1>Hello to Create Session View!</h1>
+  <CreateSessionForm />
 </template>
 
 <script>
+import CreateSessionForm from '@/views/createSession/components/CreateSessionForm'
+
 export default {
   name: 'CreateSession',
+  components: {
+    CreateSessionForm,
+  },
 }
 </script>

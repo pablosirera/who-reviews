@@ -4,6 +4,8 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
+    '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
+      'jest-transform-stub',
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
@@ -13,7 +15,9 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '<rootDir>/src/assets/images/',
+    '/tests/setUp',
   ],
+  setupFiles: ['./tests/setUp.js'],
   coverageReporters: ['lcov', 'text-summary'],
   coverageThreshold: {
     global: {
