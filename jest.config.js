@@ -13,7 +13,9 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '<rootDir>/src/assets/images/',
+    '/tests/setUp',
   ],
+  setupFiles: ['./tests/setUp.js'],
   coverageReporters: ['lcov', 'text-summary'],
   coverageThreshold: {
     global: {

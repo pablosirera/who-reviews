@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/my-sessions">My Sessions</router-link>
+      <router-link to="/">{{ $t('tabs.home') }}</router-link> |
+      <router-link to="/my-sessions">{{ $t('tabs.mySessions') }}</router-link>
     </div>
     <router-view />
   </div>
