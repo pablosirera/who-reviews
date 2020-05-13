@@ -1,6 +1,7 @@
 {
   "create": {
     "create": "Crear",
+    "isActive": "¿Está activo?",
     "name": "Nombre sesión"
   },
   "home": {

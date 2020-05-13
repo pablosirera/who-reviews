@@ -1,6 +1,7 @@
 {
   "create": {
     "create": "Create",
+    "isActive": "Is active?",
     "name": "Name of session"
   },
   "home": {
