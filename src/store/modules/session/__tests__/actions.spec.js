@@ -1,10 +1,16 @@
 import actions from '../actions'
 import { mockSessions } from '@/__mocks__/templates/sessions'
-import mockAxios from 'axios'
+import axios from 'axios'
+
+jest.mock('axios', () => {
+  return {
+    post: jest.fn(),
+  }
+})
 
 describe('store/session/actions', () => {
   it('should commit all sessions', async () => {
-    mockAxios.mockImplementationOnce(() =>
+    axios.post.mockImplementationOnce(() =>
       Promise.resolve({ data: { data: { session: mockSessions } } })
     )
 

@@ -13,6 +13,22 @@ exports[`CreateSession -> CreateSessionForm should match snapshot 1`] = `
   />
    
   <div
+    class="mt-2 cursor-pointer"
+    data-test="input-is-active"
+  >
+    <input
+      name="isActive"
+      type="checkbox"
+    />
+     
+    <span
+      class="mx-2"
+    >
+      create.isActive
+    </span>
+  </div>
+   
+  <div
     class="flex justify-center"
   >
     <thebutton-stub

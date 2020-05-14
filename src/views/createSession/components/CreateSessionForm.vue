@@ -8,7 +8,11 @@
       class="border outline-none py-2 px-4 rounded"
       :placeholder="$t('create.name')"
     />
-    <div class="mt-2 cursor-pointer" @click="toggleIsActive()">
+    <div
+      data-test="input-is-active"
+      class="mt-2 cursor-pointer"
+      @click="toggleIsActive()"
+    >
       <input v-model="isActive" type="checkbox" name="isActive" />
       <span class="mx-2">{{ $t('create.isActive') }}</span>
     </div>

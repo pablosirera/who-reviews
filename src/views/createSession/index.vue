@@ -1,5 +1,8 @@
 <template>
-  <CreateSessionForm @submit-form="sendCreateSession" />
+  <CreateSessionForm
+    data-test="create-session-form"
+    @submit-form="sendCreateSession"
+  />
 </template>
 
 <script>
