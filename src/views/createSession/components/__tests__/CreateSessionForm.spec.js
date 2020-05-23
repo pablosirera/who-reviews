@@ -18,6 +18,8 @@ describe('CreateSession -> CreateSessionForm', () => {
   it('should emit event if form is valid', () => {
     const { wrapper } = build()
 
+    const expectedOuput = { active: true, name: 'name of session' }
+
     const input = wrapper.find('[data-testid="session-name"]')
 
     input.setValue('name of session')
@@ -25,5 +27,16 @@ describe('CreateSession -> CreateSessionForm', () => {
 
     const formSubmittedCalls = wrapper.emitted('submit-form')
     expect(formSubmittedCalls).toHaveLength(1)
+    expect(formSubmittedCalls[0][0]).toEqual(
+      expect.objectContaining(expectedOuput)
+    )
+  })
+
+  it('should change data isActive when click on your element', () => {
+    const { wrapper } = build()
+    const div = wrapper.find('[data-test="input-is-active"]')
+
+    div.trigger('click')
+    expect(wrapper.vm.isActive).toBe(false)
   })
 })

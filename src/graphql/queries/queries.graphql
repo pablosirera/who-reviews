@@ -1,0 +1,11 @@
+module.exports = {
+  allSessions: `
+    query AllSessions {
+      session {
+        id
+        name
+        active
+      }
+    }
+  `,
+}

@@ -21,7 +21,7 @@ const routes = [
   {
     path: ROUTES_PATH.CREATE_SESSION.path,
     name: ROUTES_PATH.CREATE_SESSION.name,
-    component: () => import('@/views/createSession/CreateSession.vue'),
+    component: () => import('@/views/createSession/index.vue'),
   },
 ]
 

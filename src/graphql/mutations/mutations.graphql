@@ -1,0 +1,13 @@
+module.exports = {
+  saveSession: `
+    mutation($session: session_insert_input!) {
+      insert_session(objects: [$session]) {
+        returning {
+          id,
+          name,
+          active
+        }
+      }
+    }
+  `,
+}

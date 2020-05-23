@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit --coverage --watchAll",
-    "test:unit:noWatch": "vue-cli-service test:unit --coverage",
+    "test": "vue-cli-service test:unit --coverage --watchAll",
+    "test:noWatch": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint --no-fix",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "lint:fix": "vue-cli-service lint --fix"
@@ -51,7 +51,7 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
-    "pre-push": "npm run lint && npm run test:unit:noWatch"
+    "pre-push": "npm run lint && npm run test:noWatch"
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [
